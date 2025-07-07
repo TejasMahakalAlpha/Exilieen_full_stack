@@ -24,7 +24,7 @@ const Contact = () => {
 
     try {
       const response = await fetch(
-        "https://exilieen-full-stack.onrender.com",
+        "https://exilieen-full-stack.onrender.com/contact", // ✅ Correct endpoint
         {
           method: "POST",
           headers: {
@@ -33,6 +33,11 @@ const Contact = () => {
           body: JSON.stringify(formData),
         }
       );
+
+      const contentType = response.headers.get("content-type");
+      if (!contentType || !contentType.includes("application/json")) {
+        throw new Error("❌ Server did not return JSON.");
+      }
 
       const data = await response.json();
       if (data.success) {
