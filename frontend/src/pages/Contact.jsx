@@ -24,7 +24,7 @@ const Contact = () => {
 
     try {
       const response = await fetch(
-        "https://exilieen-tejas-backend.onrender.com/contact",
+        "https://exilieen-full-stack.onrender.com",
         {
           method: "POST",
           headers: {
