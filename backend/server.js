@@ -1,15 +1,29 @@
 const express = require('express');
 const cors = require('cors');
 const nodemailer = require('nodemailer');
+require('dotenv').config();
 
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// Allow frontend from Render
+// ✅ Allow multiple frontend domains
+const allowedOrigins = [
+  "https://exilieen-full-stack-frontend.onrender.com",
+  "https://exilieen-tejas-frontend.onrender.com"
+];
+
 app.use(cors({
-  origin: "https://exilieen-tejas-frontend.onrender.com",
+  origin: function (origin, callback) {
+    // Allow requests with no origin (like mobile apps, curl, Postman)
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
   methods: ["GET", "POST"],
   allowedHeaders: ["Content-Type"],
+  credentials: true
 }));
 
 app.use(express.json());
@@ -27,8 +41,8 @@ app.post('/contact', async (req, res) => {
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: "mahakaltejas686@gmail.com",
-        pass: "esrr qzye mcsf aznt",
+        user: process.env.EMAIL_USER || "mahakaltejas686@gmail.com",
+        pass: process.env.EMAIL_PASS || "esrr qzye mcsf aznt",
       },
     });
 
