@@ -179,6 +179,24 @@
   .ai-title {
     font-size: 2rem;
   }
+
+  .ai-subtitle {
+    font-size: 1rem;
+    margin-bottom: 40px;
+  }
+
+  .slide-wrapper {
+    padding: 12px;
+  }
+
+  .ai-caption {
+    font-size: 0.85rem;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
 }
 
 /* Responsive – Tablets (Portrait and Landscape) */
@@ -208,18 +226,21 @@
     padding-left: 36px;
   }
 
+  .ai-image {
+    height: 160px;
+  }
+
   .ai-subtitle {
-    font-size: 1rem;
-    margin-bottom: 30px;
+    font-size: 0.95rem;
+    margin-bottom: 25px;
   }
 
   .ai-caption {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
   }
 
-  .swiper-button-next,
-  .swiper-button-prev {
-    display: none;
+  .slide-wrapper {
+    padding: 10px;
   }
 }
 
@@ -266,11 +287,11 @@
   }
 
   .ai-image {
-    height: 160px;
+    height: 140px;
   }
 
   .ai-caption {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
   }
 
   .swiper-pagination {
