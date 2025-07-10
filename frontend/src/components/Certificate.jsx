@@ -22,9 +22,7 @@ const Certificate = () => {
 
   return (
     <div className="certificate-section">
-      <div className="breadcrumb">
-        <span>Home &gt; Certificates</span>
-      </div>
+      
 
       <h1 className="section-title">Our Certificates</h1>
 
