@@ -10,6 +10,9 @@ import Whatsapp from "./components/Whatsapp";
 import Home from './pages/Home';
 import AboutCompany from './pages/AboutCompany';
 import Experts from './pages/Experts';
+import AgriStartup from "./pages/AgriStartup";
+
+import Research_development from './pages/Research_development';
 import Contact from './pages/Contact';
 import Consultancy from './pages/Consultancy';
 import Testing from './pages/Testing';
@@ -38,6 +41,8 @@ function AnimatedRoutes() {
         <Route path="/" element={<Home />} />
         <Route path="/about/company" element={<AboutCompany />} />
         <Route path="/about/experts" element={<Experts />} />
+                <Route path="/about/AgriStartup" element={<AgriStartup/>}/>
+
         <Route path="/contact" element={<Contact />} />
         <Route path="/certificate" element={<Certificate />} />
         <Route path="/aboutcompany" element={<AboutCompany />} />
@@ -46,6 +51,7 @@ function AnimatedRoutes() {
         <Route path="/testing" element={<Testing />} />
         <Route path="/research" element={<Research />} />
         <Route path="/training" element={<Training />} />
+        <Route path="/research_development" element={<Research_development/>} />
       </Routes>
     </AnimatePresence>
   );

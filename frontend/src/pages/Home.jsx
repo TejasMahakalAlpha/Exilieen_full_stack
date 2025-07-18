@@ -18,6 +18,8 @@ const Home = () => {
           Your browser does not support the video tag.
         </video>
         <div className="hero-overlay">
+                    <p>We are AgriTech Startup by DPIIT</p>
+
           <h1>Exilieen Scientific Research LLP</h1>
           <p>Innovating Tomorrow Through Science</p>
           <button className="hero-btn" onClick={() => navigate("/AboutCompany")}>
