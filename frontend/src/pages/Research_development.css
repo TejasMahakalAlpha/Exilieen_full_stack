@@ -1,5 +1,6 @@
 .rnd-container {
-  padding: 100px 50px;
+  /* padding: 102px 50px; */
+padding:140px 100px;
   /* background: linear-gradient(120deg, #010a13, #08090c); */
     background: linear-gradient(to bottom, #0a0f1a, #050a12);
   font-family: "Poppins", sans-serif;

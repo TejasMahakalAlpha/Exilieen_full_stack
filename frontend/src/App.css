@@ -10,5 +10,5 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden; /* Prevent horizontal scroll */
-  background-color: #000; /* Optional: Matches your hero bg */
+  background: linear-gradient(to bottom, #0a0f1a, #050a12)
 }
