@@ -1,19 +1,14 @@
-
-body {
-
-  font-family: "Open Sans", sans-serif;
+/* ===== GLOBAL RESET (add this at the very top) ===== */
+* {
   margin: 0;
   padding: 0;
- 
+  box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
-main {
-  min-height: 70vh;
-}
-
-footer {
-  background: #333;
-  color: white;
-  padding: 5px;
-  border-radius: 15px;
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  background-color: #000; /* Optional: Matches your hero bg */
 }

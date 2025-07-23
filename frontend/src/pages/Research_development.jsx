@@ -1,60 +1,110 @@
-import React, { useState } from "react";
+
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./Research_development.css";
 
-import lab1 from "../assets/about-company/lab1.jpg";
-import lab2 from "../assets/about-company/lab2.webp";
-
-const certificates = [
-  { name: "ISO 9001:2015 Certificate", image: lab1 },
-  { name: "NABL Accreditation Certificate", image: lab2 },
-];
+import {
+  FaSeedling,
+  FaTint,
+  FaBug,
+  FaVial,
+  FaMicroscope,
+  FaRegLightbulb,
+} from "react-icons/fa";
 
 const Research_development = () => {
-  const [activeCert, setActiveCert] = useState(null);
-
-  const handleOpen = (cert) => {
-    setActiveCert(cert);
-  };
-
-  const handleClose = () => {
-    setActiveCert(null);
-  };
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
 
   return (
-    <div className="certificate-section">
-      
-
-      <h1 className="section-title">Our Certificates</h1>
-
-      <div className="certificate-list">
-        {certificates.map((cert, index) => (
-          <div
-            key={index}
-            className="certificate-card"
-            onClick={() => handleOpen(cert)}
-          >
-            <div className="certificate-name">{cert.name}</div>
-          </div>
-        ))}
+    <div className="rnd-container">
+      <div className="rnd-header" data-aos="fade-down">
+        <h1>🔬 Research & Development (R&D)</h1>
+        <p>
+          Our R&D division is the backbone of scientific innovation at our
+          Agriculture Testing Lab. We are dedicated to developing cutting-edge
+          solutions that enhance agricultural productivity, ensure food safety,
+          and promote sustainable farming practices.
+        </p>
       </div>
 
-      {activeCert && (
-        <div className="modal-overlay" onClick={handleClose}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <span className="modal-close" onClick={handleClose}>
-              &times;
-            </span>
-            <img
-              src={activeCert.image}
-              alt={activeCert.name}
-              className="modal-image"
-            />
-            <p className="modal-caption">{activeCert.name}</p>
+      <div className="rnd-focus" data-aos="fade-up">
+        <h2>Key Focus Areas</h2>
+        <div className="focus-grid">
+          <div className="focus-card">
+            <FaSeedling className="focus-icon" />
+            <h3>Soil Health & Fertility</h3>
+            <p>
+              Advanced testing and research to improve soil quality and optimize
+              crop yields.
+            </p>
+          </div>
+          <div className="focus-card">
+            <FaTint className="focus-icon" />
+            <h3>Water Quality Analysis</h3>
+            <p>
+              Ensuring safe and efficient irrigation practices through
+              comprehensive water testing.
+            </p>
+          </div>
+          <div className="focus-card">
+            <FaBug className="focus-icon" />
+            <h3>Plant Disease Prevention</h3>
+            <p>
+              Innovative techniques for early diagnosis and control of plant
+              diseases.
+            </p>
+          </div>
+          <div className="focus-card">
+            <FaVial className="focus-icon" />
+            <h3>Residue Testing</h3>
+            <p>
+              Researching safe agricultural practices by analyzing pesticide and
+              fertilizer residues.
+            </p>
+          </div>
+          <div className="focus-card">
+            <FaMicroscope className="focus-icon" />
+            <h3>Agri Biotechnology</h3>
+            <p>
+              Exploring molecular and genetic methods for crop improvement.
+            </p>
           </div>
         </div>
-      )}
+      </div>
+
+      <div className="rnd-strengths" data-aos="fade-up">
+        <h2>Our R&D Strengths</h2>
+        <ul>
+          <li>State-of-the-art laboratory infrastructure</li>
+          <li>Experienced team of scientists and researchers</li>
+          <li>Collaboration with universities and agricultural institutes</li>
+          <li>Focus on real-world solutions for farmers and agri-industries</li>
+        </ul>
+      </div>
+
+      <div className="rnd-goals" data-aos="zoom-in">
+        <h2>Impact Goals</h2>
+        <p>
+          <FaRegLightbulb className="goal-icon" />
+          Boost agricultural innovation
+        </p>
+        <p>
+          <FaRegLightbulb className="goal-icon" />
+          Support farmer welfare
+        </p>
+        <p>
+          <FaRegLightbulb className="goal-icon" />
+          Contribute to sustainable development goals (SDGs)
+        </p>
+      </div>
     </div>
   );
 };
 
 export default Research_development;
+
+
+// export default Research_development;

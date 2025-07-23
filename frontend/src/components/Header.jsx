@@ -46,6 +46,7 @@ const Header = () => {
                 <li><Link to="/consultancy">Consultancy</Link></li>
                 <li><Link to="/research">Research</Link></li>
                 <li><Link to="/training">Training</Link></li>
+                <li><Link to ="/AnalyticalService">AnalyticalService</Link></li>
               </ul>
             </li>
             <li><Link to="/contact" onClick={closeMenu}>Contact</Link></li>

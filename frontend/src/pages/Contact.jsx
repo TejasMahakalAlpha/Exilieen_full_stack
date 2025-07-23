@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Contact.css";
 
 const Contact = () => {
@@ -10,6 +10,17 @@ const Contact = () => {
   });
 
   const [status, setStatus] = useState("");
+
+  useEffect(() => {
+    // Prevent multiple script tags if component reloads
+    if (!document.getElementById("sw0k8zWg6nNPK7Hyq7-mt")) {
+      const script = document.createElement("script");
+      script.src = "https://www.chatbase.co/embed.min.js";
+      script.id = "sw0k8zWg6nNPK7Hyq7-mt";
+      script.setAttribute("domain", "www.chatbase.co");
+      document.body.appendChild(script);
+    }
+  }, []);
 
   const handleChange = (e) => {
     setFormData({
@@ -24,7 +35,7 @@ const Contact = () => {
 
     try {
       const response = await fetch(
-        "https://exilieen-full-stack.onrender.com/contact", // ✅ Correct endpoint
+        "https://exilieen-full-stack.onrender.com/contact",
         {
           method: "POST",
           headers: {
@@ -61,17 +72,17 @@ const Contact = () => {
       <div className="contact-container">
         <h1 className="section-title">Get in Touch</h1>
 
-        {/* Contact Info and Map */}
         <div className="contact-content">
           <div className="contact-box">
-            <h3>Akola, Maharashtra</h3>
+            <h3>EXILIEEN SCIENTIFIC RESEARCH LLP</h3>
             <p>
-              At Post Zodga, Tq Barshitakli <br />
-              Dist Akola 444405
+              FLNO-G-2,PLNO-10,G.NO-44<br />
+              BE BAJAJ HOS GURUKRUPA AP<br />
+              AURANGABAD CITY, 431001, MAHARASHTRA
             </p>
-            <p>📞 7218072175</p>
-            <p>📞 7507872383</p>
-            <p>✉️ tejs.mahakal@gmail.com</p>
+            <br />
+            <p>📞 011-9423008651</p>
+            <p>✉️ deepakbornare@gmail.com</p>
           </div>
 
           <div className="contact-map">
@@ -86,7 +97,6 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* Contact Form */}
         <div className="contact-form-section">
           <h2>Send Us a Message</h2>
           <form onSubmit={handleSubmit} className="contact-form">
@@ -127,6 +137,12 @@ const Contact = () => {
             <button type="submit">Send Message</button>
             <p className="status-msg">{status}</p>
           </form>
+        </div>
+
+        {/* Informational Chatbot Box, not the widget itself */}
+        <div className="chatbot-box">
+          <h3>Need Help Instantly?</h3>
+          <p>Chat with our bot to get quick answers.<br />(Chatbot widget on right/bottom)</p>
         </div>
       </div>
     </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import logo from "../assets/footer/logo.png";
+import { Link, useLocation } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -23,19 +24,18 @@ const Footer = () => {
 
         <div className="footer-links">
           <h3>Quick Links</h3>
-          <a href="#">Contact</a>
-          <a href="#">About Us</a>
-          <a href="#">Certificates</a>
-          <a href="#">Gallery</a>
+          <Link to="/contact" >Contact</Link>
+          <Link to="/about/company">About Company</Link>
+          <Link to="/certificate" >Certificate</Link>
+         
         </div>
 
         <div className="footer-services">
-          <h3>Our Services</h3>
-          <a href="#">Food Testing</a>
-          <a href="#">Water Testing</a>
-          <a href="#">Soil Testing</a>
-          <a href="#">Shelf Life Testing</a>
-          <a href="#">Environment Monitoring</a>
+         <Link to="/infrastructure">Infrastructure</Link>
+                         <Link to="/testing">Testing</Link>
+                         <Link to="/consultancy">Consultancy</Link>
+                      <Link to="/research">Research</Link>
+                         <Link to="/training">Training</Link>
         </div>
 
         <div className="footer-map">
@@ -51,10 +51,15 @@ const Footer = () => {
 
       <div className="footer-contact">
         <div>
-          <i className="fas fa-map-marker-alt"></i> At Post Zodga, Barshitakli, Akola 444405
+          <i className="fas fa-map-marker-alt"></i> FLNO-G-2,PLNO-10,G.NO-44
+BE BAJAJ HOS GURUKRUPA AP
+AURANGABAD
+AURANGABAD CITY
+AURANGABAD-431001
+MAHARASHTRA
         </div>
         <div>
-          <i className="fas fa-phone-alt"></i> 9763050611 / 8308778129
+          <i className="fas fa-phone-alt"></i> 011-9423008651
         </div>
         <div>
           <i className="fas fa-envelope"></i> tejs.mahakal@gmail.com

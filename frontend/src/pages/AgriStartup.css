@@ -1,142 +1,136 @@
-.certificate-section {
-  background: linear-gradient(to bottom, #0a0f1a, #050a12);
-  color: #e2e8f0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding: 60px 20px;
-  text-align: center;
-  min-height: 100vh;
-}
+/* ======== AgriStartup Page Styles ======== */
+.agristartup-container {
+  padding: 100px 20px;
+  /* background: radial-gradient(ellipse at top, #1a1a1a, #0d0d0d); */
+      background: linear-gradient(to bottom, #0a0f1a, #050a12);
 
-.breadcrumb {
-  font-size: 0.95rem;
-  margin-bottom: 30px;
-  color: #aaa;
-}
-
-.section-title {
-  font-size: 2.5rem;
-  color: #f99807;
-  margin-bottom: 40px;
-  text-shadow: 0 0 12px rgba(255, 215, 0, 0.3);
-  text-transform: uppercase;
-}
-
-.certificate-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 25px;
-  padding: 20px 0;
-}
-
-.certificate-card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 15px;
-  padding: 20px 30px;
-  width: 260px;
-  text-align: center;
-  cursor: pointer;
-  backdrop-filter: blur(10px);
-  transition: all 0.3s ease;
-  box-shadow: 0 8px 25px rgba(0, 234, 255, 0.05);
-}
-
-.certificate-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 35px rgba(0, 234, 255, 0.15);
-}
-
-.certificate-name {
-  font-size: 1.1rem;
-  color: #00e6e6;
-  font-weight: 600;
-}
-
-/* Modal Styling */
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.85);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 999;
-}
-
-.modal-content {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 20px;
-  width: 90%;
-  max-width: 700px;
-  border-radius: 12px;
-  position: relative;
-  box-shadow: 0 8px 30px rgba(0, 234, 255, 0.2);
-  text-align: center;
-  backdrop-filter: blur(20px);
-  animation: fadeIn 0.3s ease;
-}
-
-.modal-image {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  border: 2px solid rgba(255, 255, 255, 0.08);
-}
-
-.modal-caption {
-  margin-top: 12px;
-  font-size: 1rem;
-  color: #f0f0f0;
-  font-weight: 500;
-}
-
-.modal-close {
-  position: absolute;
-  top: 12px;
-  right: 18px;
-  font-size: 26px;
-  cursor: pointer;
-  color: #f99807;
-  font-weight: bold;
-  transition: 0.2s ease;
-}
-
-.modal-close:hover {
   color: #fff;
+  font-family: 'Poppins', sans-serif;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: scale(0.94);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
+.agri-header {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 60px;
+}
+
+.agri-header h1 {
+  font-size: 2.5rem;
+  color: #ffa500; /* Orange */
+  margin-bottom: 20px;
+}
+
+.agri-header p {
+  font-size: 1.1rem;
+  color: #ccc;
+  line-height: 1.8;
+}
+
+/* Features Grid */
+.agri-features {
+  max-width: 1200px;
+  margin: 0 auto 80px;
+  text-align: center;
+}
+
+.agri-features h2 {
+  font-size: 2rem;
+  color: #ffa500;
+  margin-bottom: 40px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.feature-card {
+  background: rgba(255, 165, 0, 0.08);
+  border: 1px solid rgba(255, 165, 0, 0.3);
+  border-radius: 16px;
+  padding: 30px 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(255, 165, 0, 0.1);
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(255, 165, 0, 0.4);
+}
+
+.feature-icon {
+  font-size: 40px;
+  color: #ffa500;
+  margin-bottom: 15px;
+}
+
+.feature-card h3 {
+  font-size: 1.3rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+/* Apply Section */
+.agri-apply {
+  max-width: 900px;
+  margin: 0 auto 80px;
+  text-align: center;
+}
+
+.agri-apply h2 {
+  font-size: 2rem;
+  color: #ffa500;
+  margin-bottom: 20px;
+}
+
+.agri-apply ul {
+  list-style: none;
+  padding: 0;
+  color: #ccc;
+  font-size: 1.05rem;
+  line-height: 2;
+}
+
+.agri-apply ul li::before {
+  content: "🔸 ";
+  color: #ffa500;
+}
+
+/* Join Section */
+.agri-join {
+  text-align: center;
+  background: rgba(255, 165, 0, 0.05);
+  padding: 40px 20px;
+  border-top: 1px solid rgba(255, 165, 0, 0.2);
+}
+
+.agri-join h2 {
+  font-size: 2rem;
+  color: #ffa500;
+  margin-bottom: 15px;
+}
+
+.agri-join p {
+  font-size: 1.1rem;
+  color: #ccc;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  .section-title {
+  .agri-header h1 {
     font-size: 2rem;
   }
 
-  .certificate-card {
-    width: 90%;
-    padding: 15px 20px;
-  }
-
-  .modal-content {
-    padding: 15px;
-  }
-
-  .modal-image {
-    max-height: 70vh;
-    object-fit: contain;
+  .feature-grid {
+    grid-template-columns: 1fr;
   }
 }

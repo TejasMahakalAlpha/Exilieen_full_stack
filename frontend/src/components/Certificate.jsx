@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 import "./Certificate.css";
 
-import lab1 from "../assets/about-company/lab1.jpg";
-import lab2 from "../assets/about-company/lab2.webp";
+import certificate from "../assets/certificate/certificate.png";
 
 const certificates = [
-  { name: "ISO 9001:2015 Certificate", image: lab1 },
-  { name: "NABL Accreditation Certificate", image: lab2 },
+  { name: "Certificate of Recommendation", image: certificate },
 ];
 
 const Certificate = () => {
@@ -22,8 +20,6 @@ const Certificate = () => {
 
   return (
     <div className="certificate-section">
-      
-
       <h1 className="section-title">Our Certificates</h1>
 
       <div className="certificate-list">

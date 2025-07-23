@@ -2,7 +2,8 @@
   background: linear-gradient(to bottom, #0a0f1a, #050a12);
   color: #f8f9fa;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding: 60px 20px;
+  /* padding: 0px 20px; */
+  padding :100px 20px;
 }
 
 .breadcrumb {
@@ -202,4 +203,73 @@
   .contact-form {
     padding: 0 10px;
   }
+}
+
+/* ================= Chatbot Section ================= */
+.chatbot-box {
+  margin-top: 60px;
+  padding: 30px 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.05);
+}
+
+.chatbot-box h2 {
+  color: #f99807;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-shadow: 0 0 8px rgba(0, 255, 255, 0.2);
+}
+
+.chatbot-container {
+  height: 500px;
+  width: 100%;
+}
+/* Chatbot Box */
+.chatbot-box {
+  margin-top: 60px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(0, 234, 255, 0.08);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  text-align: center;
+  color: #e2e8f0;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.05);
+}
+
+.chatbot-box h3 {
+  font-size: 1.6rem;
+  color: #00e6e6;
+  margin-bottom: 10px;
+}
+
+.chatbot-box p {
+  margin-bottom: 20px;
+  color: #ccc;
+}
+/* ================= Chatbot Section ================= */
+.chatbot-box {
+  margin-top: 60px;
+  padding: 30px 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.05);
+  border: 1px solid rgba(0, 234, 255, 0.08);
+  color: #e2e8f0;
+}
+
+.chatbot-box h3 {
+  font-size: 1.6rem;
+  color: #00e6e6;
+  margin-bottom: 10px;
+}
+
+.chatbot-box p {
+  margin-bottom: 20px;
+  color: #ccc;
 }

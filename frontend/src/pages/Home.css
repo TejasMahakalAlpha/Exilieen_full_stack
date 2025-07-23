@@ -2,6 +2,7 @@
 .hero {
   position: relative;
   height: 100vh;
+  width: 100%;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -13,8 +14,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   object-fit: cover;
   z-index: 0;
   filter: brightness(0.6);
@@ -30,21 +31,17 @@
 
 .hero-overlay h1 {
   font-size: 3.8rem;
-  /* color: #00eaff; */
-  color:white;
-  /* text-shadow: 0 0 20px #00eaff; */
-  /* animation: glowText 2s infinite alternate; */
+  color: white;
 }
 
 .hero-overlay p {
   font-size: 1.5rem;
   color: #ffffffcc;
-  margin: 20px 0;
+  margin: 10px 0 5px;
   animation: floatText 3s ease-in-out infinite;
 }
 
 .hero-btn {
-  /* background: #b18b02; */
   background-color: transparent;
   color: #ed8a0a;
   border: none;
@@ -53,15 +50,14 @@
   font-weight: bold;
   border-radius: 30px;
   cursor: pointer;
-  /* animation: pulseBtn 2s infinite; */
   box-shadow: 0 0 12px rgba(238, 145, 5, 0.6);
-  /* transition: all 0.3s ease; */
+  transition: all 0.3s ease;
 }
 
 .hero-btn:hover {
   background: #d39204;
   transform: scale(1.05);
-  color:white;
+  color: white;
   box-shadow: 0 0 20px rgba(210, 151, 1, 0.8);
 }
 
@@ -120,7 +116,6 @@
   color: #eda507;
   font-size: 1.3rem;
   margin: 20px 0 10px;
-  transition: color 0.3s ease;
 }
 
 .service-card p {
@@ -130,15 +125,36 @@
   line-height: 1.6;
 }
 
+/* ===== VISION & MISSION SECTION ===== */
+.vision-section {
+  background: #050a12;
+  padding: 80px 40px;
+  color: #f0f4f8;
+  text-align: center;
+}
+
+.vision-content {
+  max-width: 900px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.vision-content p {
+  font-size: 1.1rem;
+  margin: 20px 0;
+  color: #ccc;
+  line-height: 1.8;
+}
+
 /* ===== ANIMATIONS ===== */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes glowText {
-  0% { text-shadow: 0 0 20px #00eaff; }
-  100% { text-shadow: 0 0 30px #00eaff, 0 0 60px #00eaff; }
 }
 
 @keyframes floatText {
@@ -146,30 +162,34 @@
   50% { transform: translateY(-10px); }
 }
 
-@keyframes pulseBtn {
-  0%, 100% { box-shadow: 0 0 12px rgba(0, 234, 255, 0.6); }
-  50% { box-shadow: 0 0 25px rgba(0, 234, 255, 1); }
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 1024px) {
+  .hero-overlay h1 {
+    font-size: 3rem;
+  }
+  .hero-overlay p {
+    font-size: 1.3rem;
+  }
 }
 
-/* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 768px) {
+  .hero {
+    height: 90vh;
+  }
   .hero-overlay h1 {
     font-size: 2.2rem;
   }
-
   .hero-overlay p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
-
   .hero-btn {
     padding: 12px 28px;
+    font-size: 1rem;
   }
-
   .services-grid {
     flex-direction: column;
     align-items: center;
   }
-
   .service-card {
     width: 90%;
     max-width: 400px;
@@ -178,19 +198,35 @@
 
 @media (max-width: 480px) {
   .hero {
-    height: 85vh;
+    height: 80vh;
   }
-
   .hero-overlay h1 {
     font-size: 1.8rem;
   }
-
   .hero-overlay p {
     font-size: 1rem;
   }
-
   .hero-btn {
     padding: 10px 20px;
     font-size: 0.95rem;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero-overlay h1 {
+    font-size: 1.5rem;
+  }
+  .hero-overlay p {
+    font-size: 0.9rem;
+  }
+  .hero-btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+  .vision-content p {
+    font-size: 1rem;
   }
 }

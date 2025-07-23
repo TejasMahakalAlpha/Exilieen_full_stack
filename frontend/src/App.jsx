@@ -19,6 +19,7 @@ import Testing from './pages/Testing';
 import Infrastructure from './pages/Infrastructure';
 import Training from './pages/Training';
 import Research from './pages/Research';
+import AnalyticalService from "./pages/AnalyticalServices";
 
 import './App.css';
 
@@ -47,6 +48,7 @@ function AnimatedRoutes() {
         <Route path="/certificate" element={<Certificate />} />
         <Route path="/aboutcompany" element={<AboutCompany />} />
         <Route path="/Consultancy" element={<Consultancy/>} />
+        <Route path="/AnalyticalService" element={<AnalyticalService/>} />
         <Route path="/infrastructure" element={<Infrastructure />} />
         <Route path="/testing" element={<Testing />} />
         <Route path="/research" element={<Research />} />
