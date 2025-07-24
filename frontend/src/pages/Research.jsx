@@ -18,11 +18,12 @@ const Research = () => {
 
   return (
     <div className="research-section">
-      <div className="breadcrumb" data-aos="fade-in">
+      {/* <div className="breadcrumb" data-aos="fade-in">
         <span>Home &gt; Services &gt; Research</span>
-      </div>
+      </div> */}
 
       <div className="research-container">
+        <br />
         <h1 className="section-title" data-aos="fade-up">Research Facilities</h1>
 
         <div className="section" data-aos="fade-up">

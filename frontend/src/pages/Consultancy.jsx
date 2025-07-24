@@ -17,11 +17,12 @@ const Consultancy = () => {
 
   return (
     <div className="consultancy-section">
-      <div className="breadcrumb" data-aos="fade-in">
+      {/* <div className="breadcrumb" data-aos="fade-in">
         <span>Home &gt; Services &gt; Consultancy</span>
-      </div>
+      </div> */}
 
       <div className="consultancy-container">
+        <br />
         <h1 className="section-title" data-aos="fade-up">Consultancy</h1>
 
         <div className="consultancy-content" data-aos="fade-up">

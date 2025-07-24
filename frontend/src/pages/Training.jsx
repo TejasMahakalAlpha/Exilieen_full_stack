@@ -11,11 +11,12 @@ import {
 const Traning = () => {
   return (
     <div className="training-section">
-      <div className="breadcrumb">
+      {/* <div className="breadcrumb">
         <span>Home &gt; Services &gt; Training</span>
-      </div>
+      </div> */}
 
       <div className="training-container">
+        <br />
         <h1 className="section-title">Training Facilities</h1>
 
         <div className="training-wrapper">

@@ -1,4 +1,3 @@
-
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -11,6 +10,7 @@ import {
   FaVial,
   FaMicroscope,
   FaRegLightbulb,
+  FaCheckCircle,
 } from "react-icons/fa";
 
 const Research_development = () => {
@@ -78,10 +78,10 @@ const Research_development = () => {
       <div className="rnd-strengths" data-aos="fade-up">
         <h2>Our R&D Strengths</h2>
         <ul>
-          <li>State-of-the-art laboratory infrastructure</li>
-          <li>Experienced team of scientists and researchers</li>
-          <li>Collaboration with universities and agricultural institutes</li>
-          <li>Focus on real-world solutions for farmers and agri-industries</li>
+          <li><FaCheckCircle className="tick-icon" /> State-of-the-art laboratory infrastructure</li>
+          <li><FaCheckCircle className="tick-icon" /> Experienced team of scientists and researchers</li>
+          <li><FaCheckCircle className="tick-icon" /> Collaboration with universities and agricultural institutes</li>
+          <li><FaCheckCircle className="tick-icon" /> Focus on real-world solutions for farmers and agri-industries</li>
         </ul>
       </div>
 
@@ -105,6 +105,3 @@ const Research_development = () => {
 };
 
 export default Research_development;
-
-
-// export default Research_development;

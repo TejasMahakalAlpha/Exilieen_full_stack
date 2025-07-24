@@ -15,6 +15,7 @@ const AgriStartup = () => {
   return (
     <div className="agristartup-container">
       <div className="agri-header" data-aos="fade-down">
+        <br />
         <h1>🟠 AgriStartup – Empowering Agri Entrepreneurs</h1>
         <p>
           AgriStartup is our initiative to support and accelerate innovation in

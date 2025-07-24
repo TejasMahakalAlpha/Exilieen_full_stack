@@ -46,7 +46,8 @@
 }
 
 .instrument-link {
-  display: inline-flex;
+  /* display: inline-flex; */
+display:inline-block;
   align-items: center;
   margin-top: 10px;
   color: #0aa39b;
@@ -55,8 +56,9 @@
 }
 
 .instrument-link .check-icon {
-  margin-right: 6px;
-  color: #00ffae;
+  margin-right: 130px;
+  /* color: #00ffae; */
+  display:hidden;
 }
 
 .instrument-grid {

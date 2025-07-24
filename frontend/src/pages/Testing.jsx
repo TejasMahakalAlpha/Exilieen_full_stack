@@ -31,11 +31,12 @@ const Testing = () => {
 
   return (
     <div className="testing-section">
-      <div className="breadcrumb" data-aos="fade-in">
+      {/* <div className="breadcrumb" data-aos="fade-in">
         <span>Home &gt; Services &gt; Testing Facilities</span>
-      </div>
+      </div> */}
 
       <div className="testing-container">
+        <br />
         <h1 className="section-title" data-aos="fade-up">Testing Facilities</h1>
 
         <div className="facilities-wrapper">

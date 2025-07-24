@@ -11,10 +11,10 @@ const AboutCompany = () => {
       <div className="banner">
         <h1>ABOUT COMPANY</h1>
       </div>
-
-      <div className="breadcrumb">
+<br /><br />
+      {/* <div className="breadcrumb">
         <a href="/">Home</a> &gt; About &gt; About Company
-      </div>
+      </div> */}
 
       <div className="content-container">
         <div className="main-content">

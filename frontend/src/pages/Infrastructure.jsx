@@ -49,9 +49,9 @@ const Infrastructure = () => {
   return (
     <div className="infrastructure-section">
       {/* Breadcrumb */}
-      <div className="breadcrumb" data-aos="fade-in">
+      {/* <div className="breadcrumb" data-aos="fade-in">
         <span>Home &gt; Services &gt; Infrastructure</span>
-      </div>
+      </div> */}
 
       {/* Title */}
       <div className="instrument-header" data-aos="zoom-in">
