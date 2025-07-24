@@ -6,21 +6,22 @@ import {
 } from 'react-icons/fa';
 
 // Import team images
-import expertImg1 from '../assets/expert/expert1.jpg';
-import expertImg2 from '../assets/expert/expert2.jpg';
-import expertImg3 from '../assets/expert/expert3.jpg';
-import expertImg4 from '../assets/expert/expert4.jpg';
-import expertImg5 from '../assets/expert/expert5.jpg';
-import expertImg6 from '../assets/expert/expert6.jpg';
-import expertImg7 from '../assets/expert/expert7.jpg';
-import expertImg8 from '../assets/expert/expert8.jpg';
-import expertImg9 from '../assets/expert/expert9.jpg';
-import expertImg10 from '../assets/expert/expert10.jpg';
-import expertImg11 from '../assets/expert/expert11.jpg';
-import expertImg12 from '../assets/expert/expert12.jpg';
-import expertImg13 from '../assets/expert/expert13.jpg';
-import expertImg14 from '../assets/expert/expert14.jpg';
-import expertImg15 from '../assets/expert/expert15.jpg';
+import expertImg1 from '../assets/expert/expert1.jpeg';
+import expertImg2 from '../assets/expert/expert2.jpeg';
+import expertImg3 from '../assets/expert/expert3.jpeg';
+import expertImg4 from '../assets/expert/expert4.jpeg';
+import expertImg5 from '../assets/expert/expert5.jpeg';
+import expertImg6 from '../assets/expert/expert6.jpeg';
+import expertImg7 from '../assets/expert/expert7.jpeg';
+import expertImg8 from '../assets/expert/expert8.jpeg';
+import expertImg9 from '../assets/expert/expert9.jpeg';
+import expertImg10 from '../assets/expert/expert10.jpeg';
+import expertImg11 from '../assets/expert/expert11.jpeg';
+import expertImg12 from '../assets/expert/expert12.jpeg';
+import expertImg13 from '../assets/expert/expert13.jpeg';
+import expertImg14 from '../assets/expert/expert14.jpeg';
+import expertImg15 from '../assets/expert/expert15.jpeg';
+
 
 const teamMembers = [
   { name: "Mr. Tejas Mahakal", role: "Founder", image: expertImg1 },
