@@ -12,7 +12,6 @@ const Contact = () => {
   const [status, setStatus] = useState("");
 
   useEffect(() => {
-    // Prevent multiple script tags if component reloads
     if (!document.getElementById("sw0k8zWg6nNPK7Hyq7-mt")) {
       const script = document.createElement("script");
       script.src = "https://www.chatbase.co/embed.min.js";
@@ -86,10 +85,13 @@ const Contact = () => {
           </div>
 
           <div className="contact-map">
-            <h4>View Map</h4>
+            <h4>Our Location</h4>
             <iframe
-              title="Google Map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.615097937666!2d77.16217927512525!3d20.46502908103766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd0d7b15fd255ab%3A0xd7212a5576b3d2f0!2sKatepurna%20Wildlife%20Sanctuary!5e0!3m2!1sen!2sin!4v1718379193667!5m2!1sen!2sin"
+              title="Exilieen Scientific Research LLP Map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.750727637616!2d75.31550469999999!3d19.850497500000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdb99b6a8fcc2c1%3A0x828e80fa35facf01!2sExilieen%20Scientific%20Research%20LLP!5e0!3m2!1sen!2sin!4v1753331263333!5m2!1sen!2sin"
+              width="100%"
+              height="300"
+              style={{ border: 0 }}
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
@@ -139,10 +141,10 @@ const Contact = () => {
           </form>
         </div>
 
-        {/* Informational Chatbot Box, not the widget itself */}
+        {/* Chatbot Section (Visual Box, not actual widget) */}
         <div className="chatbot-box">
           <h3>Need Help Instantly?</h3>
-          <p>Chat with our bot to get quick answers.<br />(Chatbot widget on right/bottom)</p>
+          <p>Chat with our AI Assistant — just tap the chat icon below.</p>
         </div>
       </div>
     </div>
