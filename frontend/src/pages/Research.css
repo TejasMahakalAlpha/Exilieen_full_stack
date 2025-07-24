@@ -6,13 +6,6 @@
   overflow-x: hidden;
 }
 
-.breadcrumb {
-  text-align: center;
-  font-size: 0.95rem;
-  margin-bottom: 30px;
-  color: #ccc;
-}
-
 .section-title {
   text-align: center;
   font-size: 2.5rem;
@@ -38,7 +31,7 @@
 
 .text-content {
   flex: 1;
-  min-width: 300px;
+  min-width: 280px;
 }
 
 .text-content h2 {
@@ -68,7 +61,7 @@
 
 .image-container {
   flex: 1;
-  min-width: 300px;
+  min-width: 280px;
   display: flex;
   justify-content: center;
 }
@@ -92,7 +85,7 @@
   margin-right: 10px;
 }
 
-/* Statistics Section */
+/* Statistics */
 .consultancy-stats {
   display: flex;
   justify-content: center;
@@ -140,18 +133,45 @@
   margin-bottom: 6px;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
+/* -------------------- RESPONSIVE BREAKPOINTS -------------------- */
+
+@media (max-width: 1024px) {
   .section-title {
-    font-size: 2rem;
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
-  .stat-item {
-    width: 100%;
-    max-width: 300px;
+  .text-content {
+    text-align: left;
   }
 
   .image-container img {
     max-width: 100%;
+  }
+
+  .stat-item {
+    width: 45%;
+    max-width: 260px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .text-content h2 {
+    font-size: 22px;
+  }
+
+  .stat-item {
+    width: 100%;
   }
 }

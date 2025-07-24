@@ -1,16 +1,13 @@
-
 .analytical-wrapper {
   background: linear-gradient(to bottom, #0a0f1a, #050a12);
   color: #f8f9fa;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  /* padding: 100px 100px 60px; */
-padding :150px 100px 100px;
+  padding: 150px 100px 100px;
   min-height: 100vh;
   overflow-x: hidden;
   animation: fadeIn 1s ease;
 }
 
-/* SECTION BLOCK */
 .section {
   display: flex;
   flex-wrap: wrap;
@@ -76,7 +73,6 @@ padding :150px 100px 100px;
   font-size: 1.1rem;
 }
 
-/* FEATURE BOXES (like AI Integration, IoT) */
 .features {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
@@ -104,7 +100,6 @@ padding :150px 100px 100px;
   box-shadow: 0 15px 30px rgba(0, 234, 255, 0.1);
 }
 
-/* IMAGE STYLING */
 .section-img {
   flex: 1;
   max-width: 480px;
@@ -122,17 +117,65 @@ padding :150px 100px 100px;
   box-shadow: 0 15px 45px rgba(0, 234, 255, 0.2);
 }
 
-/* ANIMATIONS */
+/* ANIMATION */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* RESPONSIVE DESIGN */
+/* TABLET & BELOW (≤ 992px) */
 @media (max-width: 992px) {
+  .analytical-wrapper {
+    padding: 100px 40px 60px;
+  }
+
   .section {
     flex-direction: column;
     text-align: center;
+    gap: 30px;
+  }
+
+  .section-text h2 {
+    font-size: 2rem;
+  }
+
+  .features {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+}
+
+/* MEDIUM DEVICES (≤ 768px) */
+@media (max-width: 768px) {
+  .analytical-wrapper {
+    padding: 80px 25px;
+  }
+
+  .section-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .section-text ul li {
+    font-size: 0.95rem;
+  }
+
+  .feature-card {
+    padding: 12px 16px;
+  }
+}
+
+/* SMALL DEVICES (≤ 576px) */
+@media (max-width: 576px) {
+  .analytical-wrapper {
+    padding: 60px 15px;
+  }
+
+  .section-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .section-text ul li {
+    padding-left: 25px;
+    font-size: 0.9rem;
   }
 
   .section-img {
@@ -144,12 +187,17 @@ padding :150px 100px 100px;
   }
 }
 
-@media (max-width: 576px) {
-  .analytical-wrapper {
-    padding: 60px 20px;
+/* EXTRA SMALL (≤ 375px) */
+@media (max-width: 375px) {
+  .section-text h2 {
+    font-size: 1.4rem;
   }
 
-  .section-text h2 {
-    font-size: 1.8rem;
+  .section-text ul li {
+    font-size: 0.85rem;
+  }
+
+  .feature-card {
+    font-size: 0.9rem;
   }
 }
