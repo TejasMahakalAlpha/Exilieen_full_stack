@@ -81,7 +81,8 @@ const Contact = () => {
             </p>
             <br />
             <p>📞 011-9423008651</p>
-            <p>✉️ deepakbornare@gmail.com</p>
+            {/* <p>✉️ deepakbornare@gmail.com</p> */}
+                 <p>✉️ tejasmahakal740@gmail.com</p>
           </div>
 
           <div className="contact-map">
